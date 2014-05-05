@@ -9,7 +9,7 @@ define([ 'jquery' ], function($) {
     		dfd.resolve(value);
     	}, 100);
     	
-    	return dfd;
+    	return dfd.promise();
     },
 
     manipulateRemoteData : function(url) {
@@ -23,7 +23,7 @@ define([ 'jquery' ], function($) {
     		dfd.resolve(names);
     	});
 
-    	return dfd;
+    	return dfd.promise();
     }
   };
 });
